@@ -12,16 +12,17 @@ const name = "Mario";
 function greetMe(yourName) {
   const hour = new Date().getHours();
 
-  const outputMessage1 = "Buongiorno";
-  const outputMessage2 = "Buon pomeriggio";
-  const outputMessage3 = "Buonasera";
+  let outputMessage = "";
 
   if (hour <= 13) {
-    console.log(outputMessage1, yourName);
+    let outputMessage = "Buonasera";
+    console.log(outputMessage, yourName);
   } else if (hour > 13 && hour <= 17) {
-    console.log(outputMessage2, yourName);
+    let outputMessage = "Buonasera";
+    console.log(outputMessage, yourName);
   } else {
-    console.log(outputMessage3, yourName);
+    let outputMessage = "Buonasera";
+    console.log(outputMessage, yourName);
   }
 }
 
