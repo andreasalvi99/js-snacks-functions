@@ -15,7 +15,7 @@ function pickFirstLetter(letter) {
     const currentName = names[i];
     const firstLetter = currentName.charAt(0);
     console.log("firstLetter:", firstLetter);
-    firstLetterArray.push();
+    firstLetterArray.push(firstLetter);
   }
 
   return pickFirstLetter;
@@ -24,6 +24,6 @@ function pickFirstLetter(letter) {
 // Invoca la funzione qui e stampa il risultato in console
 
 pickFirstLetter();
-console.table(firstLetterArray);
+console.log(firstLetterArray);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
