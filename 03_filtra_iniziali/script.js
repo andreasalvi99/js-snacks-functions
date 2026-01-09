@@ -2,16 +2,17 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 console.table(names);
-const nameStarsWith = [];
 
 // Dichiara la funzione qui.
 
 /**
  *This function examinate every array's item and if the initial word of an item is the same as the one chose then the item gets picked
- * @param {string} word this represents the name that starts with the same letter as the one that will be chosen
+ * @param {string} word this represents the array's name
+ * @param {string} letter this represents the startig letter we want to sort out
  * @returns {string}
  */
-function getNamesThatStarsInA(word) {
+function getNamesThatStarsInA(word, letter) {
+  const nameStarsWith = [];
   const firstLetter = "A";
 
   for (let i = 0; i < names.length; i++) {
@@ -22,11 +23,11 @@ function getNamesThatStarsInA(word) {
       nameStarsWith.push(currentName);
     }
   }
+  return nameStarsWith;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-getNamesThatStarsInA();
-console.log(nameStarsWith);
+console.log(getNamesThatStarsInA(names, "A"));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
