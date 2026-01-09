@@ -19,7 +19,7 @@ function getNamesThatStarsInA(word) {
 
     if (currentName.charAt(0) === firstLetter) {
       console.log(currentName);
-      nameStarsWith.push();
+      nameStarsWith.push(currentName);
     }
   }
 }
@@ -27,6 +27,6 @@ function getNamesThatStarsInA(word) {
 // Invoca la funzione qui e stampa il risultato in console
 
 getNamesThatStarsInA();
-console.table(nameStarsWith);
+console.log(nameStarsWith);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
