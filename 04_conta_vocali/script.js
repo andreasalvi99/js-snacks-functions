@@ -9,26 +9,26 @@ const vocals = ["a", "e", "i", "o", "u"];
 console.table(vocals);
 
 // Dichiara la funzione qui.
-
-function vocalsInJavascript() {
+function countVocals(word) {
+  let vocalsNum = "";
   for (let i = 0; i < word.length; i++) {
     const currentLetter = word[i];
     console.log("currentLetter:", currentLetter);
 
-    for (let i = 0; i < vocals.length; i++) {
-      const currentVocal = vocals[i];
+    for (let j = 0; j < vocals.length; j++) {
+      const currentVocal = vocals[j];
       console.log("currentVocal:", currentVocal);
 
       if (currentLetter === currentVocal) {
+        console.log("Questa è una vocale? ", currentLetter === currentVocal);
       }
     }
-    console.log("-----------------------");
+    console.log("-------------------------------");
   }
-  return vocalsInJavascript;
+
+  return vocalsNum;
 }
-
 // Invoca la funzione qui e stampa il risultato in console
-
-vocalsInJavascript();
+countVocals(word);
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
