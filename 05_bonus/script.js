@@ -10,7 +10,19 @@ const name = "Mario";
 // Dichiara la funzione qui.
 
 function greetMe(yourName) {
-  const hour = new Date().getHours;
+  const hour = new Date().getHours();
+
+  const outputMessage1 = "Buongiorno";
+  const outputMessage2 = "Buon pomeriggio";
+  const outputMessage3 = "Buonasera";
+
+  if (hour <= 13) {
+    console.log(outputMessage1, yourName);
+  } else if (hour > 13 && hour <= 17) {
+    console.log(outputMessage2, yourName);
+  } else {
+    console.log(outputMessage3, yourName);
+  }
 }
 
 // Invoca la funzione qui e stampa il risultato in console
