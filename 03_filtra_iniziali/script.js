@@ -6,8 +6,9 @@ console.table(names);
 // Dichiara la funzione qui.
 
 /**
- *
- * @param {string} word
+ *This function examinate every array's item and if the initial word of an item is the same as the one chose then the item gets picked
+ * @param {string} word this represents the name that starts with the same letter as the one that will be chosen
+ * @returns {string}
  */
 function getNamesThatStarsInA(word) {
   const firstLetter = "A";
