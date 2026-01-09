@@ -15,6 +15,8 @@ function pickFirstLetter(letter) {
     const firstLetter = currentName.charAt(0);
     console.log("firstLetter:", firstLetter);
   }
+
+  return pickFirstLetter;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
