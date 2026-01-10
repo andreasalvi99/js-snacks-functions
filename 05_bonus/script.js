@@ -15,10 +15,10 @@ function greetMe(yourName) {
   let outputMessage = "";
 
   if (hour <= 13) {
-    let outputMessage = "Buonasera";
+    let outputMessage = "Buongiorno";
     console.log(outputMessage, yourName);
   } else if (hour > 13 && hour <= 17) {
-    let outputMessage = "Buonasera";
+    let outputMessage = "Buon Pomeriggio";
     console.log(outputMessage, yourName);
   } else {
     let outputMessage = "Buonasera";
