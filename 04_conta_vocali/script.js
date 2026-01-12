@@ -3,28 +3,28 @@
 const word = "javascript";
 
 // Dichiara la funzione qui.
-function countVocals(myWord) {
-  const resultVocals = [];
+function countVowels(myWord) {
+  const resultVowels = [];
   // Creo un array che contiene solo voccali
-  const vocals = ["a", "e", "i", "o", "u"];
+  const vowels = ["a", "e", "i", "o", "u"];
 
   for (let i = 0; i < myWord.length; i++) {
     const currentLetter = myWord[i];
 
-    for (let j = 0; j < vocals.length; j++) {
-      const currentVocal = vocals[j];
+    for (let j = 0; j < vowels.length; j++) {
+      const currentVowel = vocals[j];
 
-      if (currentLetter === currentVocal) {
-        resultVocals.push(currentLetter);
+      if (currentLetter === currentVowel) {
+        resultVowels.push(currentLetter);
       }
     }
   }
 
-  return resultVocals.length;
+  return resultVowels.length;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(countVocals(word));
+console.log(countVowels(word));
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
